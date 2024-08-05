@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    body {
+            background-color: #e7e7e7a6;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        padding: 10px 8%;
+        z-index: 1000; 
+    }
+
+    .logo{
+        width: 40px;
+        cursor: pointer;
+        object-position: bottom;
+        position: fixed; /* Fix the nav at the top of the viewport */
+        z-index: 1000; 
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none; /* Remove underline */
+        color: beige;
+        
+    }
+
+    /* Additional styling for the navigation menu */
+    nav ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        list-style: none;
+        width: 100%;
+        text-align: right;
+        padding-right: 0px;
+        z-index: 1000; 
+    }
+
+    nav ul li {
+        display: inline; /* Display list items inline */
+        margin-right: 10px; /* Add some space between menu items */
+        display: inline-block;
+        margin: 10px;
+    }
+
+    /* Container for the navigation with a pseudo-element for the border */
+    .nav-container {
+        position: fixed; /* Ensure positioned elements are relative to this container */
+        padding-top: 2px; /* Ensure content is not overlapped by the border */
+    }
+
+    .nav-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 67px; /* Adjust the height of the border */
+        background-color: rgb(198, 193, 139); /* Set the color of the border */
+        background-image: url(image/discover\ \(1\).png);
+        z-index: 999; /* Ensure the border is behind other elements */
+        position: fixed; /* Fix the nav at the top of the viewport */
+        
+    }
+    
+    /*tempat _____________________________________________________________________________________________*/
+
+    .tempat {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1300px; 
+        height: 400px; 
+        object-fit: cover; /* Optional: cover the area while maintaining aspect ratio */
+        z-index: -1; 
+        border-radius: 20px; /* Adjust the value to make the corners more or less rounded */
+        box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    }
+
+    .tempat-text {
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center text horizontally and vertically */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        color: rgb(255, 255, 255);
+        padding: 160px;
+        text-align: center;
+        box-sizing: border-box; /* Include padding in width calculation */
+        width: 1300px; /* Match width of the image */
+        height: 400px; 
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 300%;
+        border-radius: 20px; /* Adjust the value to make the corners more or less rounded */
+    }
+
+    .tempat-text2 {
+        position: relative;
+        top: 590px;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center text horizontally and vertically */
+        color: rgb(20, 20, 20);
+        padding: 130px;
+        text-align: left;
+        width: 1560px; /* Match width of the image */
+        height: 400px; 
+        font-size: 140%;
+    }
+
+    /*option _____________________________________________________________________________________________*/
+
+/* Text below each image */
+.option-text {
+    margin-top: 10px; /* Space between image and text */
+    color: rgb(20, 20, 20);
+    font-size: 20px;
+}
+
+.options-container {
+    position: absolute;
+    top: 600px;
+    left: 110px;
+    width: calc(100% - 220px); /* Adjust to fit within the viewport */
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.option-item {
+    display: inline-block; /* Align items in a row */
+    text-align: center; /* Center text under images */
+    margin-right: 50px; /* Space between option items */
+}
+
+.options {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 200px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+}
+/*devitor _____________________________________________________________________________________________*/
+.de
+    </style>
+</head>
+<body>
+    <div class="container nav-container">
+        <nav>
+            <img src="image/discover (5).png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="tempat-container">
+        <img src="image/lombok.jpg" class="tempat">
+        <div class="tempat-text">Discover Indonesia</div>
+        <div class="tempat-text2">Discover more about hidden locations in Indonesia</div>
+    </div>
+    <div class="options-container">
+        <div class="option-item">
+            <img src="image/op1.png" class="options">
+            <p class="option-text">Local Favorite</p>
+        </div>
+        <div class="option-item">
+            <img src="image/op2.png" class="options">
+            <p class="option-text">Popular Locations</p>
+        </div>
+        <div class="option-item">
+            <img src="image/op3.png" class="options">
+            <p class="option-text">Easy to Reach</p>
+        </div>
+    </div>
+         <p class="devitor-text">Local Favorite</p>
+    <div>
+    </div>
+</body>
+</html>
